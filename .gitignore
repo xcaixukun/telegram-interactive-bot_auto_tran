@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 .env
+/assets/db.sqlite3
+/assets/interactive-bot.pickle

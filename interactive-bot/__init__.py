@@ -21,6 +21,9 @@ load_dotenv()
 bot_token = os.getenv("BOT_TOKEN") or exit("BOT_TOKEN 未填写")
 app_name = os.getenv("APP_NAME") or exit("APP_NAME 未填写")
 welcome_message = os.getenv("WELCOME_MESSAGE") or "欢迎使用本机器人"
+LIBRETRANSLATE_API = os.getenv("LIBRETRANSLATE_API")
+CUSTOMER_LANGUAGE = os.getenv("CUSTOMER_LANGUAGE")
+CUSTOMER_SERVICE_LANGUAGE = os.getenv("CUSTOMER_SERVICE_LANGUAGE")
 try:
     admin_group_id = int(os.getenv("ADMIN_GROUP_ID")) or exit("ADMIN_GROUP 未填写")
     admin_user_ids = [
